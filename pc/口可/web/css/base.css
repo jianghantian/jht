@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, form, input, textarea, p, th, td{ margin: 0; padding: 0;}
+table{ border-collapse: collapse; border-spacing: 0;}
+img{ border: 0; transition: all .3s;}
+img:hover{ opacity: .7;}
+em, strong, i{ font-style: normal;}
+ol, ul, li{ list-style: none;}
+input, button, textarea, select, optgroup, option{ font-family: arial; font-size: inherit; font-style: inherit; font-weight: inherit; font-size: 14px;}
+select, input, label, button, img{ vertical-align: middle;}
+input, button, textarea, img{ line-height: normal;}
+textarea{ width: 100%; border: 0; resize: none; vertical-align: middle; font-size: 14px; color: #333;}
+body{ min-width: 1380px; font: 14px/1.5 "Microsoft YaHei"; color:#333;}
+a{ color: #333; text-decoration: none; transition: all .3s;}
+a:hover{ color: #44c8ea;}
+:focus{ outline: 0;}
+
+/* define class */
+
+.fl{ float:left;}
+.fr{ float:right;}
+.clearfix{ clear: left; *zoom: 1;}
+.clearfix:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+.tc{ text-align: center !important;}
+.tl{ text-align: left !important;}
+.tr{ text-align: right !important;}
+
+.hide{ display: none;}
+
+.layout-wrap{ width: 1400px; overflow: hidden;}
+.layout{ width: 1380px; margin: 0 auto;}
+
+.w70{ width: 70px;}
+.w120{ width: 120px;}
+.w320{ width: 320px;}
+
+.bb{ border-bottom: 1px solid #333;}
+.bt{ border-top: 1px solid #333;}
+
+.mt10{ margin-top: 10px;}
+.mt50{ margin-top: 50px;}
+.mb20{ margin-bottom: 20px;}
+.mb50{ margin-bottom: 50px;}
+
+.col-666{ color: #666;}
+.col-999{ color: #999;}
+
+.fs12{ font-size: 12px;}
+

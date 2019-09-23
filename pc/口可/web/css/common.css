@@ -1,0 +1,114 @@
+@charset "UTF-8";
+.kk-header { height: 80px; background: #2f2f2f; }
+
+.kk-header .logo img { width: 90px; height: 32px; margin-top: 24px; }
+
+.kk-header .nav { line-height: 30px; margin: 25px 0 0 55px; }
+
+.kk-header .nav a { display: inline-block; margin-right: 40px; color: #fff; }
+
+.kk-header .nav a.cur { color: #44c8ea; }
+
+.kk-header .nav a:hover { color: #44c8ea; }
+
+.kk-header .search { position: relative; width: 150px; background: #fff; padding: 0 15px; margin-top: 22px; border-radius: 30px; }
+
+.kk-header .search .ipt { width: 100%; height: 36px; line-height: 36px; border: 0; }
+
+.kk-header .search .icon { position: absolute; right: 15px; top: 10px; background: url(../images/icons/sp-header.png) no-repeat; width: 16px; height: 16px; cursor: pointer; }
+
+.kk-header .link li { float: left; margin: 15px 0 0 30px; text-align: center; color: #cccccc; }
+
+.kk-header .link li i { background: url(../images/icons/sp-header.png) no-repeat; display: block; width: 28px; height: 23px; margin: 0 auto 5px; }
+
+.kk-header .link li i.icon1 { background-position: 0 -28px; }
+
+.kk-header .link li i.icon2 { background-position: 0 -58px; }
+
+.kk-header .link li i.icon3 { background-position: 0 -86px; }
+
+.kk-header .link li a { color: #cccccc; }
+
+.kk-header .link li a:hover { color: #44c8ea; }
+
+.kk-footer { background: #222; }
+
+.kk-footer .link { margin-top: 30px; }
+
+.kk-footer .link dl { margin-right: 70px; }
+
+.kk-footer .link dl dt { height: 30px; color: #cccccc; }
+
+.kk-footer .link dl dd a { line-height: 2; padding-right: 8px; color: #666666; font-size: 12px; }
+
+.kk-footer .link dl dd a:hover { color: #44c8ea; }
+
+.kk-footer .qrcode { padding: 25px 0 15px 0; }
+
+.kk-footer .qrcode img { width: 110px; height: 110px; margin-bottom: 10px; cursor: pointer; }
+
+.kk-footer .copy-right { padding: 20px 0; border-top: 1px solid #333; color: #666666; font-size: 12px; }
+
+.bg-home { background: url(../images/local/bg1920x360.jpg) center center; height: 360px; }
+
+/* 广告位 */
+.ad-position { padding: 20px 0 0 0; }
+
+.ad-position img { float: left; display: block; width: 260px; height: 80px; margin-right: 20px; border-radius: 10px; }
+
+/* 标题 */
+.title-common { font-size: 18px; color: #999999; }
+
+.title-common .tit { padding-bottom: 5px; font-size: 30px; color: #111; font-weight: normal; }
+
+/* 软件学习专题 */
+.software-study { padding: 30px 0 10px 0; }
+
+.software-study li { float: left; width: 143px; background: #fff; padding: 15px 0 15px 10px; border: 1px solid #ebebeb; border-radius: 10px; margin-right: 20px; box-shadow: 0 5px 8px #ebebeb; }
+
+.software-study li img { width: 40px; height: 40px; margin-right: 10px; }
+
+/* 行业技能学习 */
+.industry-skills { padding-bottom: 50px; }
+
+.industry-skills li { float: left; width: 258px; background: #fff; padding-bottom: 15px; margin-right: 20px; border: 1px solid #ebebeb; border-radius: 10px; box-shadow: 0 5px 8px #ebebeb; overflow: hidden; }
+
+.industry-skills li .img { width: 258px; height: 180px; }
+
+.industry-skills li .pro { height: 40px; padding: 10px 15px; }
+
+.industry-skills li .count { padding: 0 15px; font-size: 12px; color: #999999; }
+
+/* 大咖讲师 */
+.lecturer-list { padding: 30px 0 10px 0; }
+
+.lecturer-list li { float: left; width: 178px; background: #fff; margin-right: 20px; border: 1px solid #ebebeb; border-radius: 10px; box-shadow: 0 5px 8px #ebebeb; text-align: center; cursor: pointer; overflow: hidden; }
+
+.lecturer-list li .img { width: 178px; height: 178px; margin-bottom: 15px; }
+
+.lecturer-list li .pos { padding: 5px 0 15px 0; font-size: 12px; color: #999999; }
+
+/* 客服 置顶 */
+.service-topback { position: fixed; right: 20px; bottom: 50px; z-index: 100; padding: 10px; }
+
+.service-topback .wrap { background: #fff; border-radius: 5px; box-shadow: 0 0 10px #ebebeb; }
+
+.service-topback .wrap .line { display: block; height: 1px; background: #f5f5f5; margin: 0 10px; }
+
+.service-topback .wrap .item { display: block; width: 50px; padding: 10px; text-align: center; font-size: 12px; }
+
+.service-topback .wrap .item.wx i { background-position: 0 0; }
+
+.service-topback .wrap .item.qq i { background-position: 0 -24px; }
+
+.service-topback .wrap .item.top i { background-position: 0 -50px; }
+
+.service-topback .wrap .item i { background: url(../images/icons/sp-service.png) no-repeat; display: inline-block; width: 22px; height: 22px; margin-bottom: 5px; }
+
+.page-zone a { display: inline-block; background: #222; line-height: 30px; padding: 0 10px; margin: 0 5px; border: 1px solid #5d5d5d; color: #f0f0f0; }
+
+.page-zone a.cur, .page-zone a:hover { border-color: #ffcc00; color: #ffcc00; }
+
+.loading-box { position: fixed; left: 0; top: 0; z-index: 1000; width: 100%; height: 100%; background: #000; filter: alpha(opacity=50); opacity: .5; }
+
+.loading-box i { position: fixed; left: 50%; top: 50%; background-image: url(../images/com/loading.gif); width: 32px; height: 32px; margin: -16px 0 0 -16px; }

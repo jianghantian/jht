@@ -1,0 +1,9 @@
+// 模拟头部 
+function includeHeader(){
+    document.write('<div class="cgwall-header"> <div class="layout clearfix"> <div class="logo fl"><img src="images/com/logo.jpg"></div> <div class="nav fl"> <a href="#" class="cur">首页</a> <a href="#">灵感</a> <a href="#">资源</a> <a href="#">课程</a> <a href="#">招聘</a> <a href="#">大神</a> <a href="#">榜单</a> </div> <div class="search fl"> <input type="text" class="ipt" placeholder="请输入搜索的内容"> <i class="btn"></i> </div> <!-- 登录前显示 --> <div class="login-before fr"> <a href="#">登录</a> <a href="#" class="cur">注册</a> </div> <!-- 登录后显示 --> <div class="login-after fr hide"> <a href="javascript:;" class="fl upload"></a> <a href="javascript:;" class="fl msg"><i></i></a> <div class="user fl"> <img class="pic" src="images/local/user30x30.jpg"></a> <div class="user-nav hide"> <div class="hd">小蒋</div> <div class="bd"> <a href="javascript:;">我的关注</a> <a href="javascript:;">我的收藏</a> <a href="javascript:;">我的下载</a> <a href="javascript:;">我的设置</a> <a href="javascript:;">退出登录</a> </div> </div> </div> </div> </div> </div>');
+} 
+
+// 模拟尾部 
+function includeFooter(){
+    document.write('<div class="cgwall-footer"> <div class="layout clearfix"> <div class="logo fl"><img src="images/com/logo.jpg"></div> <div class="text fl"> <ul class="fl w250"> <li>CGwall.cn是一个新兴活力原画交流平台,集素材、资源、课程和招聘为一体。</li> <li>粤ICP备13066830号</li> </ul> <ul class="fl w140"> <li><a href="#">如何获得免费下载机会</a></li> <li><a href="#">下载次数查询</a></li> <li><a href="#">发布共享资源</a></li> </ul> <ul class="fl w100"> <li><a href="#">失效链接举报</a></li> <li><a href="#">投诉建议</a></li> <li><a href="#">帮助中心</a></li> </ul> <ul class="fl w100"> <li><a href="#">关于CGwall</a></li> <li><a href="#">服务条款 </a></li> <li><a href="#">联系我们</a></li> </ul> <ul class="fl w130"> <li>QQ群联系</li> <li>会员群 347787365</li> </ul> </div> <div class="qrcode fr tc"> <img src="images/local/qrcode.jpg"> <p>关注微信公众号</p> </div> </div> </div>');
+}
