@@ -1,0 +1,84 @@
+{
+	"data": [
+		{
+			"productId": "fujianqy100",
+			"title": "92#汽油电子加油券",
+			"store": "福建闽海石化98折",
+			"price": "100.00",
+			"proImg": "images/local/pro-100.jpg",
+			"detailImg": "images/local/detail-100.jpg"
+		},
+		{
+			"productId": "fujianqy200",
+			"title": "92#汽油电子加油券",
+			"store": "福建闽海石化98折",
+			"price": "200.00",
+			"proImg": "images/local/pro-200.jpg",
+			"detailImg": "images/local/detail-200.jpg"
+		},
+		{
+			"productId": "jinjiang100",
+			"title": "100元电子加油券",
+			"store": "晋江中柏石化95折",
+			"price": "100.00",
+			"proImg": "images/local/pro-bxyp-100.jpg",
+			"detailImg": "images/local/detail-bxyp-100.jpg"
+		},
+		{
+			"productId": "jinjiang200",
+			"title": "200元电子加油券",
+			"store": "晋江中柏石化95折",
+			"price": "200.00",
+			"proImg": "images/local/pro-bxyp-200.jpg",
+			"detailImg": "images/local/detail-bxyp-200.jpg"
+		},
+		{
+			"productId": "yongchun100",
+			"title": "100元电子加油券",
+			"store": "永春新陆发95折",
+			"price": "100.00",
+			"proImg": "images/local/pro-bxyp-100.jpg",
+			"detailImg": "images/local/detail-bxyp-100.jpg"
+		},
+		{
+			"productId": "yongchun200",
+			"title": "200元电子加油券",
+			"store": "永春新陆发95折",
+			"price": "200.00",
+			"proImg": "images/local/pro-bxyp-200.jpg",
+			"detailImg": "images/local/detail-bxyp-200.jpg"
+		},
+		{
+			"productId": "dehua100",
+			"title": "100元电子加油券",
+			"store": "德化东头92折",
+			"price": "100.00",
+			"proImg": "images/local/pro-bxyp-100.jpg",
+			"detailImg": "images/local/detail-bxyp-100.jpg"
+		},
+		{
+			"productId": "dehua200",
+			"title": "200元电子加油券",
+			"store": "德化东头92折",
+			"price": "200.00",
+			"proImg": "images/local/pro-bxyp-200.jpg",
+			"detailImg": "images/local/detail-bxyp-200.jpg"
+		},
+		{
+			"productId": "fujianzhy100",
+			"title": "100元电子加油券",
+			"store": "福建闽海石化98折",
+			"price": "100.00",
+			"proImg": "images/local/pro-bxyp-100.jpg",
+			"detailImg": "images/local/detail-bxyp-100.jpg"
+		},
+		{
+			"productId": "fujianzhy200",
+			"title": "200元电子加油券",
+			"store": "福建闽海石化98折",
+			"price": "200.00",
+			"proImg": "images/local/pro-bxyp-200.jpg",
+			"detailImg": "images/local/detail-bxyp-200.jpg"
+		}
+	]
+}

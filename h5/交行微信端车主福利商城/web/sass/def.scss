@@ -1,0 +1,253 @@
+$color: #ee5b3e;
+
+// 首页
+.banner-container {
+    background: #fff;
+}
+
+.nav-link {
+    background: #fff;
+    padding: .4rem .6rem;
+    border-bottom: .2rem solid #f6f7f9;
+
+    a {
+        text-align: center;
+
+        &:nth-child(1) i {
+            background-image: url(../images/icons/h-order.jpg);
+        }
+
+        &:nth-child(2) i {
+            background-image: url(../images/icons/h-xiaoma.jpg);
+        }
+
+        i {
+            background-size: cover;
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            margin: 0 auto .15rem;
+        }
+    }
+}
+
+.product-list {
+    ul {
+        background: #fff;
+        padding: 0 .3rem .3rem;
+    }
+
+    li {
+        width: 3.3rem;
+        padding: .3rem 0 .1rem;
+
+        .img {
+            width: 3.3rem;
+            height: 2.9rem;
+            margin-bottom: .15rem;
+            border-radius: .1rem;
+        }
+
+        .title {
+            height: .45rem;
+            font-size: .3rem;
+        }
+
+        .store {
+            color: #797271;
+        }
+
+        .price {
+            padding-top: .05rem;
+            color: $color;
+            font-weight: bold;
+            font-size: .32rem;
+        }
+    }
+}
+
+// 确认订单
+.confirm-order {
+    padding: .3rem;
+
+    .title {
+        padding: 0 0 .2rem .3rem;
+        font-weight: normal;
+        font-size: .26rem;
+        color: #000;
+    }
+
+    .detail {
+        background: #fff;
+        padding: .25rem .3rem;
+        border-radius: .1rem;
+
+        li {
+            line-height: 1.8;
+            font-size: .28rem;
+        }
+    }
+}
+
+.payment-amout {
+    height: 1rem;
+
+    .wrap {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 100;
+        width: 100%;
+        height: 1rem;
+        background: #fff;
+        font-size: .3rem;
+
+        .txt {
+            b {
+                color: $color;
+            }
+        }
+
+        .btn {
+            width: 3.5rem;
+            line-height: 1rem;
+            background: $color;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+}
+
+// 表单
+.form-container {
+    padding: 0 .3rem;
+    margin-top: .1rem;
+
+    .title {
+        padding: 0 0 .2rem .3rem;
+        font-weight: normal;
+        font-size: .26rem;
+        color: #000;
+    }
+
+    ul {
+        background: #fff;
+        padding: .3rem .3rem .1rem;
+        border-radius: .1rem;
+
+        li {
+            height: .9rem;
+            background: #fff;
+            padding: 0 .2rem;
+            margin-bottom: .2rem;
+            border: 1px solid #cecece;
+            border-radius: .5rem;
+
+            .icon {
+                width: .5rem;
+                height: .5rem;
+                margin-right: .2rem;
+                background-size: cover;
+
+                &.phone {
+                    background-image: url("../images/icons/i-phone.jpg");
+                }
+
+                &.code {
+                    background-image: url("../images/icons/i-code.jpg");
+                }
+            }
+
+            .ipt {
+                height: 100%;
+            }
+
+            .get-code {
+                height: .6rem;
+                background: $color;
+                padding: 0 .3rem;
+                border-radius: .3rem;
+                color: #fff;
+                font-size: .24rem;
+            }
+        }
+    }
+}
+
+// 商品详情
+.detail-container {
+    .product-infor {
+        background: #fff;
+        padding: .3rem;
+        margin-bottom: .2rem;
+
+        .cont {
+            padding: .3rem 0 .1rem 0;
+            font-size: .3rem;
+
+            .price {
+                color: $color;
+            }
+        }
+
+        .store {
+            padding-bottom: .3rem;
+            color: #757171;
+        }
+
+        .total-number {
+            width: 1.3rem;
+            line-height: .32rem;
+
+            * {
+                width: .34rem;
+                height: .34rem;
+                background: #f0f0f1;
+                text-align: center;
+            }
+        }
+    }
+
+    .product-detail {
+        background: #fff;
+        padding: 0 .3rem .3rem;
+
+        h3 {
+            padding: .3rem 0;
+        }
+
+        img {
+            margin-bottom: .2rem;
+        }
+
+        p {
+            line-height: 1.8;
+            text-align: justify;
+        }
+    }
+
+    .footer-btn {
+        height: 1.5rem;
+
+        .wrap {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            z-index: 100;
+            width: 100%;
+            padding: .3rem;
+            background: #fff;
+
+            a {
+                display: block;
+                line-height: .9rem;
+                background: $color;
+                text-align: center;
+                border-radius: .5rem;
+                font-weight: bold;
+                font-size: .32rem;
+                color: #fff;
+            }
+        }
+    }
+}

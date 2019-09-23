@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<title>商品详情</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/def.css">
+</head>
+
+<body bgcolor="#f6f7f9">
+
+	<section class="detail-container" id="app" v-cloak>
+		<div class="product-infor" v-for="productDetail">
+			<img class="img" :src="productDetail.detailImg">
+			<div class="cont flex flex-jc-sb">
+				<b class="title">{{ productDetail.title }}</b>
+				<b class="price">&yen;{{ productDetail.price }}</b>
+			</div>
+			<p class="store">{{ productDetail.store }}</p>
+			<div class="flex flex-jc-sb">
+				<span class="text">购买数量</span>
+				<div class="total-number flex flex-jc-sb">
+					<span class="sub">-</span>
+					<input type="text" class="num" v-model="productNumber" ref="productNumber">
+					<span class="add">+</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="product-detail">
+			<h3>商品详情</h3>
+			<img src="images/local/detail-tip.jpg">
+			<p>1、本产品属电子加油券，为不记名产品，可转赠给他人使用。购买成功后，将以短信形式将加油券码发送至客户指定手机号码，购买时请确保手机号码的准确性。电子加油券购买成功后不可退款。</p>
+			<p>2、本产品自发码后即买即用，电子券有效期为自发码日起90天内，请在有效期内至福建地区中石化加油站使用，逾期作废。</p>
+			<p>3、本产品限使用1次，需一次性消费、不兑现、不找零。</p>
+			<p>4、加油前请告知油站工作人员为油马电子加油券，并根据电子券面额告知加油数量，单笔加油消费可最多使用3张叠加验证，验证时请在中经汇通POS机上完成电子券验证消费。</p>
+			<p>5、单次加油金额超出油马电子券的面值，油站不支持券码和现金混合使用，请以油站最终解释为准。</p>
+			<p>6、具体可使用的油站请在“商城首页“【我的券】里查询。</p>
+			<p>7、本产品在加油使用过程中有任何问题，请拨打中经汇通7×24小时客服热线咨询：95082。</p>
+			<h3>常见问题：</h3>
+			<p>Q：100元/200元/300元 广东/福建/上海/湖北/湖南/江苏/浙江油马电子加油券是否记名？是否可转赠？</p>
+			<p>A：油马电子加油券不记名购买，电子加油券可以转赠他人使用，所以，顾客要自行保管好电子加油券信息，以防信息泄漏或丢失。</p>
+			<p>Q：油马电子加油券是否有使用期限？超期是否可使用?</p>
+			<p>A：油马电子加油券自发码后即买即用，使用期限90天，使用截止日期会同时发送到您的手机，请在有效期内使用。</p>
+			<p>Q： 油马电子加油券是否可以叠加使用？</p>
+			<p>A：可以， 广东/福建/上海/湖北/湖南/江苏/浙江油马电子加油券可叠加使用，至多可叠加3条。</p>
+			<p>Q：若单次加油金额不足100元，是否可以使用面值100元油马电子加油券？</p>
+			<p>A：单次加油金额不足100元，可以使用面值100元的油马电子加油券，但不设找赎。</p>
+			<p>Q：若单次加油金额超出100元是否可以使用100元油马电子加油券？</p>
+			<p>A：单次加油金额超出100元，按自己的实际需要，可叠加面值100元、200元或300元的油马电子加油券，但这时超出部分同样不设找赎。</p>
+		</div>
+
+		<footer class="footer-btn">
+			<div class="wrap"><a href="javascript:;" @click="onBuy">立即购买</a></div>
+		</footer>
+	</section>
+	<script src="js/rem.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/global.js"></script>
+	<script src="js/vue.min.js"></script>
+	<script src="js/vue-resource.min.js"></script>
+	<script>
+		var vm = new Vue({
+			el: '#app',
+			data: {
+				productDetail: {},
+				productNumber: 1
+			},
+			mounted: function () {
+				this.getProductList()
+				this.$nextTick(function () {
+					$('.total-number').totalNumber() // 数量+-
+				});
+			},
+			methods: {
+
+				// 获取详情
+				getProductList: function () {
+					this.$http.get('json/product.json')
+						.then(function (res) {
+							var localProductId = sessionStorage.getItem('productId') || 'fujianqy100';
+							for (var i = 0; i < res.body.data.length; i++) {
+								if (res.body.data[i].productId === localProductId) {
+									vm.productDetail = res.body.data[i]
+								}
+							}
+						})
+						.catch(function (error) {
+							console.log(error)
+						})
+				},
+
+				// 立即购买
+				onBuy() {
+					var parmas = {
+						productId: this.productDetail.productId, // 商品id
+						count: this.$refs.productNumber.value, // 购买数量
+						page: 'codeOrder',
+						type: '0'
+					}
+					window.location.href = 'codeOrder.html' // 跳转确认订单页
+				}
+			}
+		});
+	</script>
+
+</body>
+
+</html>

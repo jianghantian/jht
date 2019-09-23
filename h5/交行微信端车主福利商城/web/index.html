@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<title>车主福利商城</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/def.css">
+</head>
+
+<body bgcolor="#f6f7f9">
+
+	<section class="banner-container"><img src="images/local/banner.jpg"></section>
+
+	<nav class="nav-link flex">
+		<a class="flex-1" href="#"><i></i>我的订单</a>
+		<a class="flex-1" href="#"><i></i>小马车主</a>
+	</nav>
+
+	<section class="product-list" id="app" v-cloak>
+		<ul class="flex flex-w flex-jc-sb">
+			<li v-for="(item, index) in productList" :key="index">
+				<a href="javascript:;" @click="goDetail(item.productId)">
+					<img class="img" :src="item.proImg">
+					<h3 class="title out-one">{{ item.title }}</h3>
+					<p class="store">{{ item.store }}</p>
+					<p class="price">&yen;{{ item.price }}</p>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+	<script src="js/rem.js"></script>
+	<script src="js/vue.min.js"></script>
+	<script src="js/vue-resource.min.js"></script>
+	<script>
+		var vm = new Vue({
+			el: '#app',
+			data: {
+				productList: []
+			},
+			mounted: function () {
+				this.getProductList()
+			},
+			methods: {
+
+				// 获取产品列表
+				getProductList: function () {
+					this.$http.get('json/product.json')
+						.then(function (res) {
+							var productIds = [
+								'fujianqy200', 'fujianqy200',
+								'jinjiang100', 'jinjiang200',
+								'yongchun100', 'yongchun200',
+								'dehua100', 'dehua200',
+								'fujianzhy100', 'fujianzhy200'
+							] // 把要展示的产品 productId 放进数组即可，跟顺序有关
+
+							for (var i = 0; i < productIds.length; i++) {
+								for (var j = 0; j < res.body.data.length; j++) {
+									if (productIds[i] === res.body.data[j].productId) {
+										vm.productList.push(res.body.data[j])
+									}
+								}
+							}
+						})
+						.catch(function (error) {
+							console.log(error)
+						})
+				},
+
+				// 跳转商品详情页
+				goDetail: function (productId) {
+					sessionStorage.setItem('productId', productId)
+					window.location.href = 'detail.html'
+				}
+			}
+		})
+	</script>
+
+</body>
+
+</html>
