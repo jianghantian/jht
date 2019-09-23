@@ -1,9 +1,16 @@
+// 模拟通用html，后台开发时直接删除include.js
+
 // 模拟头部 
-function includeHeader(){
-    document.write('<div class="cgwall-header"> <div class="layout clearfix"> <div class="logo fl"><img src="images/com/logo.jpg"></div> <div class="nav fl"> <a href="#" class="cur">首页</a> <a href="#">灵感</a> <a href="#">资源</a> <a href="#">课程</a> <a href="#">招聘</a> <a href="#">大神</a> <a href="#">榜单</a> </div> <div class="search fl"> <input type="text" class="ipt" placeholder="请输入搜索的内容"> <i class="btn"></i> </div> <!-- 登录前显示 --> <div class="login-before fr"> <a href="#">登录</a> <a href="#" class="cur">注册</a> </div> <!-- 登录后显示 --> <div class="login-after fr hide"> <a href="javascript:;" class="fl upload"></a> <a href="javascript:;" class="fl msg"><i></i></a> <div class="user fl"> <img class="pic" src="images/local/user30x30.jpg"></a> <div class="user-nav hide"> <div class="hd">小蒋</div> <div class="bd"> <a href="javascript:;">我的关注</a> <a href="javascript:;">我的收藏</a> <a href="javascript:;">我的下载</a> <a href="javascript:;">我的设置</a> <a href="javascript:;">退出登录</a> </div> </div> </div> </div> </div> </div>');
+function includeHeader() { 
+    document.write('<div class="kk-header"> <div class="layout clearfix"> <div class="logo fl"><img src="images/icons/logo.png"></div> <div class="nav fl"> <a href="#" class="cur">全部课程</a> <a href="#">软件入门</a> <a href="#">VIP课程</a> <a href="#">大师课</a> <a href="#">图文课程</a> <a href="#">资源下载</a> <a href="#">直播课</a> <a href="#">专题学习</a> </div> <div class="search fl"> <input type="text" class="ipt" placeholder="搜索课程"> <i class="icon"></i> </div> <ul class="link fr"> <li><i class="icon1"></i><a href="#">招聘</a>/<a href="#">任务</a></li> <li><i class="icon2"></i><a href="#">登录</a>/<a href="#">注册</a></li> <li><i class="icon3"></i><a href="#">入驻合作</a></li> </ul> </div> </div>') 
 } 
 
 // 模拟尾部 
-function includeFooter(){
-    document.write('<div class="cgwall-footer"> <div class="layout clearfix"> <div class="logo fl"><img src="images/com/logo.jpg"></div> <div class="text fl"> <ul class="fl w250"> <li>CGwall.cn是一个新兴活力原画交流平台,集素材、资源、课程和招聘为一体。</li> <li>粤ICP备13066830号</li> </ul> <ul class="fl w140"> <li><a href="#">如何获得免费下载机会</a></li> <li><a href="#">下载次数查询</a></li> <li><a href="#">发布共享资源</a></li> </ul> <ul class="fl w100"> <li><a href="#">失效链接举报</a></li> <li><a href="#">投诉建议</a></li> <li><a href="#">帮助中心</a></li> </ul> <ul class="fl w100"> <li><a href="#">关于CGwall</a></li> <li><a href="#">服务条款 </a></li> <li><a href="#">联系我们</a></li> </ul> <ul class="fl w130"> <li>QQ群联系</li> <li>会员群 347787365</li> </ul> </div> <div class="qrcode fr tc"> <img src="images/local/qrcode.jpg"> <p>关注微信公众号</p> </div> </div> </div>');
+function includeFooter() {
+    document.write('<div class="kk-footer"> <div class="layout clearfix"> <div class="link fl"> <dl class="fl w70"> <dt>关于我们</dt> <dd> <a href="#">资讯频道</a> <a href="#">网站地图</a> </dd> </dl> <dl class="fl w320"> <dt>友情链接</dt> <dd> <a href="#">中国设计网</a> <a href="#">图片素材网</a> <a href="#">设计帝国</a> <a href="#">素材中国</a> <a href="#">直线网</a> <a href="#">创意设计</a> <a href="#">培训网红动中国设计网</a> <a href="#">PS家园</a> </dd> </dl> <dl class="fl w120"> <dt></dt> <dd> <a href="#">经营性网站备案信息</a> <a href="#">中国互联网举报中心</a> <a href="#">网络110报警服务</a> </dd> </dl> </div> <div class="qrcode fr tc"> <img src="images/local/qrcode.jpg"> <p class="fs12 col-666">微信公众号</p> </div> </div> <div class="copy-right tc">Copyright © 2011-2019 广州＊＊＊＊＊版权所有粤ICP备＊＊＊号 粤＊＊＊号粤公网安备＊＊＊号</div> </div>')
+}
+
+// 模拟客服和置顶
+function includeTopback() {
+    document.write('<div class="service-topback"> <div class="wrap"> <a class="item wx" href="javascript:;"> <i></i> <p>公众号</p> </a> <span class="line"></span> <a class="item qq" href="http://wpa.qq.com/msgrd?v=3&uin=29547157&site=qq&menu=yes"> <i></i> <p>在线联系</p> </a> </div> <div class="wrap mt10"> <a class="item top" href="javascript:;" id="top-back"> <i></i> <p>回到顶部</p> </a> </div> </div>')
 }

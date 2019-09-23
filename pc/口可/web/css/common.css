@@ -88,7 +88,7 @@
 
 .lecturer-list li .pos { padding: 5px 0 15px 0; font-size: 12px; color: #999999; }
 
-/* 客服 置顶 */
+/* 客服和置顶 */
 .service-topback { position: fixed; right: 20px; bottom: 50px; z-index: 100; padding: 10px; }
 
 .service-topback .wrap { background: #fff; border-radius: 5px; box-shadow: 0 0 10px #ebebeb; }
